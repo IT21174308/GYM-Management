@@ -18,10 +18,10 @@ export const adminListItems = (
         <ListItemText primary="Home" />
       </ListItemButton>
     </Link>
-    <Link to={'/manager'}>
+    <Link to={'/managerSchedule'}>
       <ListItemButton>
         <ListItemIcon>
-          <Home />
+          <Store />
         </ListItemIcon>
         <ListItemText primary="Schedule" />
       </ListItemButton>
@@ -31,12 +31,20 @@ export const adminListItems = (
 
 export const customerListItems = (
   <React.Fragment>
-  <Link to={'/items'}>
+  <Link to={'/bookings'}>
     <ListItemButton>
       <ListItemIcon>
         <Home />
       </ListItemIcon>
       <ListItemText primary="Home" />
+    </ListItemButton>
+  </Link>
+  <Link to={'/scheduleView'}>
+    <ListItemButton>
+      <ListItemIcon>
+        <Store />
+      </ListItemIcon>
+      <ListItemText primary="Schedule" />
     </ListItemButton>
   </Link>
   
