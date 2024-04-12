@@ -10,7 +10,7 @@ import { ManageAccounts, Newspaper, ShoppingBag } from '@mui/icons-material';
 
 export const adminListItems = (
   <React.Fragment>
-    <Link to={'/manager'}>
+    <Link to={'/bookingRequest'}>
       <ListItemButton>
         <ListItemIcon>
           <Home />
@@ -63,14 +63,7 @@ export const guestListItems = (
       <ListItemText primary="Home" />
     </ListItemButton>
   </Link>
-  <Link to={'/items'}>
-    <ListItemButton>
-      <ListItemIcon>
-        <Fastfood />
-      </ListItemIcon>
-      <ListItemText primary="Items" />
-    </ListItemButton>
-  </Link>
+  
   
   </React.Fragment>
 );

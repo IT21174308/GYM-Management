@@ -48,7 +48,8 @@ export const AuthProvider = ({ children }) => {
     Cookies.remove('userRole', { path: '/' });
     Cookies.remove('token', { path: '/' });
     toast.warning('Logout Success!')
-    window.location.reload();
+    navigate('/login'); // Navigate to login page after logout
+
   };
 
   const addItemToCart = (item) => {
