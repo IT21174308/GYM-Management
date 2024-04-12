@@ -9,6 +9,7 @@ import Dashboard from './pages/common/Dashboard';
 
 import Home from './pages/admin/Home';
 import ManagerScheduleView from './pages/admin/ManagerScheduleView';
+import BookingRequest from './pages/admin/BookingRequest';
 
 
 import ScheduleView from './pages/customer/scheduleView';
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
 
           {/*Common Routes */}
+          
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='*' element={<NotFound />} />
@@ -34,11 +36,12 @@ export default function App() {
           <Route path='/' element={<Dashboard />}>
             {/* <Route path='' element={<Guest />} /> */}
 
-            {/*Admin Routes */}
+            {/*Manager Routes */}
             <Route path='home' element={<Home />} />
             <Route path='manager' element={<Home />} />
 
             <Route path='managerSchedule' element={<ManagerScheduleView />} />
+            <Route path='bookingRequest' element={<BookingRequest />} />
 
 
 
