@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.status(200).json({message:"Server is up and running"})
 })	
 
-app.use('/', userRouter)
+app.use('/user', userRouter)
 // app.use('/card', payRouter)
 // app.use('/item', itemRouter)
 

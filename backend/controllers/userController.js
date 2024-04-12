@@ -1,7 +1,7 @@
 import UserModel from "../models/UserModel.js";
 import { jwtSign } from "../utils/functions.js";
 
-//localhost
+// https://localhost:3000/user/register
 export const registerUser = async (req, res) => {
     const data = req.body;
     try {
@@ -20,6 +20,7 @@ export const registerUser = async (req, res) => {
     }
 }
 
+// https://localhost:3000/user/login
 export const loginUser = async (req, res) => {
     const data = req.body;
     try {
