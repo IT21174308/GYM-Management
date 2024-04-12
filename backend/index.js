@@ -3,9 +3,11 @@ import dotenv from 'dotenv';
 import { dbConfig } from './utils/dbconfig.js';
 import cors from 'cors'
 import morgan from 'morgan'
-
+import userRouter from './routes/userRoutes.js';
+// import payRouter from './routes/paymentRoutes.js';
+// import itemRouter from './routes/itemRouter.js';
 dotenv.config();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -15,8 +17,9 @@ app.get('/', (req, res) => {
     res.status(200).json({message:"Server is up and running"})
 })	
 
-// app.use('/', userRouter)
-
+app.use('/', userRouter)
+// app.use('/card', payRouter)
+// app.use('/item', itemRouter)
 
 dbConfig();
 

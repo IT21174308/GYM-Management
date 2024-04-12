@@ -17,18 +17,10 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    mobile:{
-        type:String,
-        required:true
-    },
-    profileImage:{
-        type:String,
-        default:'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
-    },
     role:{
         type:String,
         required:true,
-        enum:['customer','admin']
+        enum:['customer','trainer','booking manager']
     },
 },{timestamps:true})
 
