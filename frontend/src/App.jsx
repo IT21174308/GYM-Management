@@ -44,11 +44,10 @@ export default function App() {
             <Route path='bookingRequest' element={<BookingRequest />} />
 
 
-
             {/* Customer Routes */}
             {
               <>
-              <Route path='scheduleView' element={<ScheduleView />} />
+              <Route path='/scheduleView' element={<ScheduleView />} />
               <Route path='/MakeBooking' element={<MakeBooking />} /> {/* Corrected path */}
               <Route path='/bookings' element={<BookingDetails />} /> 
               </>

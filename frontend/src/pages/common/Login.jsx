@@ -40,11 +40,11 @@ export default function Login() {
           case 'customer':
             toast.success('Login Success as a Customer!');
             // window.alert('Login Success as a customer!');
-            navigate('/');
+            navigate('/scheduleView');
             break;
           case 'booking manager':
             toast.success('Login Success as the booking manager!');
-            navigate('/manager');
+            navigate('/managerSchedule');
             break;
          
         }
