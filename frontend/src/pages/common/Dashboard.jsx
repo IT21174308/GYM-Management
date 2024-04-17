@@ -144,7 +144,7 @@ export default function Dashboard() {
         console.log('Setting nav links to ' + userRole);
         setNavlinks(customerListItems);
         if (userAPI != null) {
-          setuserAPI('/items')
+          setuserAPI('/scheduleView')
           setAuth(true);
         }
         break;
@@ -158,7 +158,7 @@ export default function Dashboard() {
 
   const getUserDetails = async () => {
     try {
-      const response = await authAxios.get(`${apiUrl}/loggedInUser`);
+      const response = await authAxios.get(`${apiUrl}/user/loggedInUser`);
       setUser(response.data);
     } catch (error) {
       console.error(error);

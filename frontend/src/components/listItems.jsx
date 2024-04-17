@@ -10,14 +10,6 @@ import { ManageAccounts, Newspaper, ShoppingBag } from '@mui/icons-material';
 
 export const adminListItems = (
   <React.Fragment>
-    <Link to={'/bookingRequest'}>
-      <ListItemButton>
-        <ListItemIcon>
-          <Home />
-        </ListItemIcon>
-        <ListItemText primary="Home" />
-      </ListItemButton>
-    </Link>
     <Link to={'/managerSchedule'}>
       <ListItemButton>
         <ListItemIcon>
@@ -26,20 +18,22 @@ export const adminListItems = (
         <ListItemText primary="Schedule" />
       </ListItemButton>
     </Link>
+    <Link to={'/bookingRequest'}>
+      <ListItemButton>
+        <ListItemIcon>
+          <Home />
+        </ListItemIcon>
+        <ListItemText primary="Booking Requests" />
+      </ListItemButton>
+    </Link>
+    
   </React.Fragment>
 );
 
 export const customerListItems = (
   <React.Fragment>
-  <Link to={'/bookings'}>
-    <ListItemButton>
-      <ListItemIcon>
-        <Home />
-      </ListItemIcon>
-      <ListItemText primary="Home" />
-    </ListItemButton>
-  </Link>
-  <Link to={'/scheduleView'}>
+
+<Link to={'/scheduleView'}>
     <ListItemButton>
       <ListItemIcon>
         <Store />
@@ -47,6 +41,16 @@ export const customerListItems = (
       <ListItemText primary="Schedule" />
     </ListItemButton>
   </Link>
+  
+  <Link to={'/bookings'}>
+    <ListItemButton>
+      <ListItemIcon>
+        <Home />
+      </ListItemIcon>
+      <ListItemText primary="Booking Details" />
+    </ListItemButton>
+  </Link>
+  
   
   
   </React.Fragment>

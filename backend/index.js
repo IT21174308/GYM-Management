@@ -18,8 +18,6 @@ app.get('/', (req, res) => {
 })	
 
 app.use('/user', userRouter)
-// app.use('/card', payRouter)
-// app.use('/item', itemRouter)
 
 dbConfig();
 
